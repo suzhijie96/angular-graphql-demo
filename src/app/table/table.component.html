@@ -1,0 +1,16 @@
+<nz-table nzBordered [nzData]="tables">
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>gender</th>
+    <th>tags</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let table of tables">
+    <td>{{ table.name }}</td>
+    <td> {{ table.gender }}</td>
+    <td>{{ table.tags }}</td>
+  </tr>
+  </tbody>
+</nz-table>
